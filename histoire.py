@@ -18,5 +18,26 @@ if reponse1 == "O":
     reponse2 = input("vous êtes mort.")
 elif reponse1 == "N":
     reponse3 = str(input(Question3))
+    if reponse3 == "N":
+        reponse4 = input("le monstre vous mange tout crue") 
+    elif reponse3 == "O": 
+        reponse5 = str(input(Question5))
+        if reponse5 == "B":
+            reponse6 = input(" le bloquage échous, vous mourrez de saignement")
+        elif reponse5 == "E":
+            reponse7 = str(input(Question7))
+            if reponse7 == "N":
+                reponse8 = input(" Le monstre profite de l'avantage et vous mourer englouti")
+            elif reponse7 == "O":
+                reponse9 = str(input(Question9))
+                if reponse9 == "E":
+                    reponse10 = input(" L'esquive échou, vous mourer empaler")
+                elif reponse9 == "B":
+                    reponse11 = str(input(Question11))
+                    if reponse11 == "N":
+                        reponse12 = input(" contrairement a vous le monstre na pas de pitier et vous tue d'un coup")
+                    elif reponse11 == "O":
+                        reponse13 = str(input(Question13))
+    
     
         
