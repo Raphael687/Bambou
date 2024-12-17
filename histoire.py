@@ -37,7 +37,21 @@ elif reponse1 == "N":
                     if reponse11 == "N":
                         reponse12 = input(" contrairement a vous le monstre na pas de pitier et vous tue d'un coup")
                     elif reponse11 == "O":
-                        reponse13 = str(input(Question13))
+                        reponse13 = str(input(Question13))  
+                        if reponse1 == "O" or reponse1 == "N":
+                            reponse1 = reponse1
+                        else:
+                         reponse1= str(input(Question1 + ". Répondez correctement a la question!")) 
+                          
+            
+                    
+                           
+                     
+                      
+                             
+                 
+
+
     
     
         
