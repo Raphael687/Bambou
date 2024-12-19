@@ -12,8 +12,29 @@ Question11 = " Le Bloquage fonctione, vouler vous achever le dragon? Oui (O) ou 
 Question12 = " contrairement a vous le monstre na pas de pitier et vous tue d'un coup"
 Question13 = " Victoire, Merci d'avoir jouer"
 
+reponse1 = None
+reponse2 = None
+reponse3 = None
+reponse4 = None
+reponse5 = None
+reponse6 = None
+reponse7 = None
+reponse8 = None 
+reponse9 = None 
+reponse10 = None
+reponse11 = None 
+reponse12 = None 
+reponse13 = None 
 
-reponse1 = str(input(Question1)) 
+def verification(choix1, choix2, reponse, question):
+    while reponse == None:
+        while reponse != choix1 and reponse != choix2:
+            reponse = input(question)
+            reponse = reponse.capitalize()
+        return str(reponse)
+
+
+reponse1 = verification("O","N",reponse1,Question1)
 if reponse1 == "O":
     reponse2 = input("vous êtes mort.")
 elif reponse1 == "N":
